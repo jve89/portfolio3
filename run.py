@@ -12,7 +12,7 @@ def get_input():
         print('Please enter the length your password should be.')
         print('Your input should only consist of 1 number between 1 and 8.\n')
     
-        enter_int = input('Enter your number here:')
+        enter_int = input('Enter your number here: ')
         
         if validate_input(enter_int):
             print(f'Your password will be {enter_int} digit(s) long.\n')
@@ -52,7 +52,31 @@ def generate_password(length):
     print('Generating your password...')
     characters = string.ascii_letters + string.digits
     gen_pass = ''.join(random.choice(characters) for x in range(int(length)))
-    print(gen_pass)
+    print(gen_pass, '\n')
+    
+    
+def question_continue():
+    """
+    x
+    """
+    enter_continue = input("Type 'yes' to conintue or 'no' to close: ")
+    try:
+        if enter_continue == 'yes':
+            print(f'You typed {enter_continue}. Please try again.\n')
+            return main_flow()
+
+        elif enter_continue == 'no':
+            print(f'You typed {enter_continue}. Goodbye!\n')
+            quit()
+        
+        elif enter_continue != 'yes' or 'no':
+            raise ValueError(f"{enter_continue}")
+        
+    except ValueError as e:
+        print(f"You typed {e}. Please type 'yes' or 'no'!\n")
+        return question_continue()
+    
+    return True
     
 
 def main_flow():
@@ -61,6 +85,7 @@ def main_flow():
     """
     input_number = get_input()
     generate_password(input_number)
+    question_continue()
     
 
 print("Welcome to the random password generator!\n")
