@@ -4,8 +4,10 @@ import random
 
 def get_input():
     """
-    Asks the user for input in how many characters 
-    the random password should get.
+    When called, this function asks the user 
+    to type in a number between 1 and 8.
+    The input will be returned to the 
+    generate_password function.
     """
 
     while True:
@@ -23,7 +25,10 @@ def get_input():
 
 def validate_input(number):
     """
-    x
+    This function validates the input from the get_input function.
+    The input should consist of only 1 number
+    and should also be a number between 1 and 8.
+    If not, an error will be shown.
     """
     try:
         if len(number) != 1:
@@ -47,7 +52,9 @@ def validate_input(number):
 
 def generate_password(length):
     """
-    x
+    This function will use the input from the
+    get_input function and generates a password
+    according the given length.
     """
     print('Generating your password...')
     characters = string.ascii_letters + string.digits
@@ -57,7 +64,13 @@ def generate_password(length):
     
 def question_continue():
     """
-    x
+    This function will run after the password
+    has been generated. It will ask if the
+    user wants to continue or not. When answering
+    yes, the program will start from the beginning.
+    When answering no, the program will quit, and 
+    when answering something else, an error will be 
+    shown.
     """
     enter_continue = input("Type 'yes' to conintue or 'no' to close: ")
     try:
@@ -81,7 +94,7 @@ def question_continue():
 
 def main_flow():
     """
-    Runs through all the functions.
+    This function runs through all the functions.
     """
     input_number = get_input()
     generate_password(input_number)
