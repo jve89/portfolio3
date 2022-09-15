@@ -14,7 +14,7 @@ def get_input():
         print('Please enter the length your password should be.')
         print('Your input should only consist of 1 number between 1 and 8.\n')
     
-        enter_int = input('Enter your number here: ')
+        enter_int = input('Enter your number here:\n')
         
         if validate_input(enter_int):
             print(f'Your password will be {enter_int} digit(s) long.\n')
@@ -44,7 +44,7 @@ def validate_input(number):
             )
         
     except ValueError as e:
-        print(f'You entered: {e}. Please try again.\n')
+        print(f'You entered: {e} Please try again.\n')
         return False 
     
     return True
@@ -75,7 +75,7 @@ def question_continue():
     enter_continue = input("Type 'yes' to conintue or 'no' to close: ")
     try:
         if enter_continue == 'yes':
-            print(f'You typed {enter_continue}. Please try again.\n')
+            print(f"You typed {enter_continue}. Let's start again!\n")
             return main_flow()
 
         elif enter_continue == 'no':
