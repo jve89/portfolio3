@@ -7,7 +7,9 @@ Welcome to the Random Password Generator application! This application is specia
 
 ## __Features__
 
-In this chapter, I will go over the Random Password Generator application existing features and future features that still need to be implemented.
+In this chapter, I will go over the Random Password Generator application existing features and future features that still need to be implemented. The features can be explained on the basis of the following flow chart:
+
+![Random Password Generator flow chart](IMG/fllowchart.png)
 
 ### __Existing features__
 
