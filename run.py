@@ -1,3 +1,6 @@
+"""
+Imported modules
+"""
 import string
 import random
 
@@ -61,7 +64,7 @@ def generate_password(length):
     gen_pass = ''.join(random.choice(characters) for x in range(int(length)))
     print(gen_pass, '\n')
     
-    
+   
 def question_continue():
     """
     This function will run after the password
@@ -90,7 +93,7 @@ def question_continue():
         return question_continue()
     
     return True
-    
+  
 
 def main_flow():
     """
