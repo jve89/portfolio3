@@ -72,9 +72,9 @@ The application have both been fully tested inside the gitpod environment as wel
 
 ### __Unfixed bugs__
 
- The application has no serious bugs. However, there are a total of 45 so called 'problems' encountered in the gitpod environment. Most of the problems are of the same nature, telling the programmer there's multiple blank lines containing white space and trailing whitespaces. Some of the problems are shown below.
+ The application has no serious bugs. However, there are a total of 45 so called 'problems' encountered in the gitpod environment. Most of the problems are of the same nature, telling the programmer there's multiple blank lines containing white space and trailing whitespaces. Some of the problems are shown below. The same problems were encountered during the pep8 online test on http://pep8online.com/. The test results will be posted below.
 
- ![Random Password Generator python problems screen](IMG/python.problems.png)
+ ![pep8 code testing results](IMG/pep8.codecheck.png)
 
 
 ## __Deployment__
