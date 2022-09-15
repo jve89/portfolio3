@@ -101,5 +101,5 @@ def main_flow():
     question_continue()
     
 
-print("Welcome to the random password generator!\n")
+print("Welcome to the Random Password Generator!\n")
 main_flow()
